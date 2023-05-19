@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.main {
+  background: url("../img/business.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1169px;
+  margin: 0 auto;
+}
+.blackout {
+  background: #10101D;
+  opacity: 90%;
+}
+
+#sticky-header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.sticky-header-active #content {
+  padding: 10px 15px;
+}
+

@@ -1,0 +1,103 @@
+.content {
+  max-width: 780px;
+  padding-top: 215px;
+  text-shadow: -1px 2px 2px rgba(0,0,0,0.25);
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &__color {
+      color: $main_color;
+    }
+  }
+  .description {
+    padding: 100px 0 80px 0;
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 0 10px 20px 10px;
+    }
+  }
+}
+.buttons {
+  padding-bottom: 200px;
+  &__order {
+    width: 183px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 15px 30px;
+  }
+  &__order {
+    width: 183px;
+    border: 1px solid #6F6D7B;
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-size: 13px;
+    margin-right: 30px;
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.5);
+    -moz-box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.5);
+    box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.5);
+  }
+  &__order:hover {
+    background: $main_color;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    transition-duration: .6s;
+  }
+  &__detailed {
+    width: 183px;
+    border: 1px solid #6F6D7B;
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-size: 13px;
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.5);
+    -moz-box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.5);
+    box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.5);
+  }
+  &__detailed:hover {
+    background: $main_color;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    transition-duration: .6s;
+  }
+}
+
+@media (max-width: 1185px) {
+  .content {
+    margin: 0 auto;
+    padding-top: 150px;
+    .title {
+      text-align: center;
+      padding: 0px 15px;
+    }
+    .description {
+      text-align: center;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}
+@media (max-width: 530px) {
+  .content .title {
+    font-size: 30px;
+  }
+  .content .description {
+    padding: 50px 15px 60px 15px;
+  }
+  .content .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons__order {
+    margin: 0 0 10px 0;
+  }
+  .buttons {
+    padding-bottom: 50px;
+  }
+}
